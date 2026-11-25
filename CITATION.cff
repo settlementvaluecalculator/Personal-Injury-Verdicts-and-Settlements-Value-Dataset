@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+type: dataset
+title: "Injury Settlement Value Base"
+abstract: "Summary statistics for 30,827 paid personal injury claims against US government bodies (City of New York, City of Chicago, US federal agencies), in 87 segments. Property damage and non-accident claim types are excluded."
+authors:
+  - name: "Settlement Value Calculator"
+    website: "https://settlementvaluecalculator.com/"
+version: "2026-11-24"
+date-released: "2026-11-24"
+url: "https://settlementvaluecalculator.com/"
+license: CC-BY-4.0
+keywords:
+  - personal injury
+  - settlements
+  - car accident
+  - tort claims
+  - open data

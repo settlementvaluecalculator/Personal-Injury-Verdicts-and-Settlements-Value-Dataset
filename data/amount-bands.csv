@@ -1,0 +1,16 @@
+dataset,segment,under_5k,5k_10k,10k_25k,25k_50k,50k_100k,100k_250k,250k_500k,500k_1m,1m_plus
+"NYC claims vs City (settled personal injury, FY2016-FY2023)",Motor vehicle,346,436,904,820,707,609,247,261,293
+"NYC claims vs City (settled personal injury, FY2016-FY2023)",Sidewalk defect,696,346,697,875,725,697,252,90,34
+"NYC claims vs City (settled personal injury, FY2016-FY2023)",Roadway defect,668,145,267,334,276,255,125,42,42
+"NYC claims vs City (settled personal injury, FY2016-FY2023)",School,191,196,481,380,313,239,156,82,44
+"NYC claims vs City (settled personal injury, FY2016-FY2023)",Parks and recreation,74,45,112,136,121,134,52,27,5
+"NYC claims vs City (settled personal injury, FY2016-FY2023)",City property / building,48,40,63,63,51,61,41,29,27
+"NYC claims vs City (settled personal injury, FY2016-FY2023)",Medical malpractice,12,37,56,63,132,235,223,155,146
+"NYC claims vs City (settled personal injury, FY2016-FY2023)",Traffic control device,45,8,15,5,7,6,3,3,5
+"Federal Judgment Fund, FTCA traffic claims (FY2009-FY2026)",Litigation settlement,228,249,437,400,426,367,184,118,87
+"Federal Judgment Fund, FTCA traffic claims (FY2009-FY2026)",Court judgment,202,190,287,238,193,211,104,75,66
+Chicago judgment and settlement payments (2012-2026),"Fall (sidewalk, street or premises)",161,86,145,113,99,42,12,5,0
+Chicago judgment and settlement payments (2012-2026),Bicycle accident,20,14,18,12,12,9,3,1,4
+Chicago judgment and settlement payments (2012-2026),Pedestrian struck by vehicle,24,7,9,15,9,10,9,3,6
+Chicago judgment and settlement payments (2012-2026),Police pursuit crash,17,3,8,4,6,12,7,7,27
+"Federal Judgment Fund, other FTCA claim types (FY2009-FY2026)",Medical malpractice,211,426,892,913,1487,2461,1623,914,517

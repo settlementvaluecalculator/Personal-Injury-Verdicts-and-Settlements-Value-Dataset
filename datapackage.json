@@ -1,0 +1,396 @@
+{
+  "name": "injury-settlement-value-base",
+  "title": "Injury Settlement Value Base",
+  "version": "2026.11.24.2",
+  "created": "2026-11-24",
+  "description": "Summary statistics for 30,827 paid personal injury claims against US government bodies, in 87 segments. Property damage and non-accident claim types are excluded.",
+  "homepage": "https://settlementvaluecalculator.com/",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/",
+      "title": "Creative Commons Attribution 4.0"
+    }
+  ],
+  "sources": [
+    {
+      "title": "NYC Comptroller, Claims Report - Underlying Settlements and Claims Filed Data",
+      "path": "https://data.cityofnewyork.us/d/ex6k-ym48"
+    },
+    {
+      "title": "US Treasury, Judgment Fund: Annual Report to Congress",
+      "path": "https://fiscaldata.treasury.gov/datasets/judgment-fund-report-to-congress/"
+    },
+    {
+      "title": "City of Chicago Department of Law, Judgment and Settlement Payment Requests",
+      "path": "https://www.chicago.gov/city/en/depts/dol/supp_info/judgment-and-settlement-payments-requests.html"
+    }
+  ],
+  "resources": [
+    {
+      "name": "settlement-segments",
+      "path": "data/settlement-segments.csv",
+      "format": "csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "dataset",
+            "type": "string",
+            "description": "Source and period"
+          },
+          {
+            "name": "breakdown",
+            "type": "string",
+            "description": "How the source was split"
+          },
+          {
+            "name": "segment",
+            "type": "string",
+            "description": "Claim type or cause"
+          },
+          {
+            "name": "sub_segment",
+            "type": "string",
+            "description": "Year, borough, resolution type or agency"
+          },
+          {
+            "name": "cases",
+            "type": "integer",
+            "description": "Paid claims with an amount above $0"
+          },
+          {
+            "name": "total_paid_usd",
+            "type": "number",
+            "description": "Sum of amounts paid"
+          },
+          {
+            "name": "mean_usd",
+            "type": "number",
+            "description": "Average amount paid"
+          },
+          {
+            "name": "min_usd",
+            "type": "number",
+            "description": "Smallest amount paid"
+          },
+          {
+            "name": "p10_usd",
+            "type": "number",
+            "description": "10th percentile"
+          },
+          {
+            "name": "p25_usd",
+            "type": "number",
+            "description": "25th percentile"
+          },
+          {
+            "name": "median_usd",
+            "type": "number",
+            "description": "50th percentile"
+          },
+          {
+            "name": "p75_usd",
+            "type": "number",
+            "description": "75th percentile"
+          },
+          {
+            "name": "p90_usd",
+            "type": "number",
+            "description": "90th percentile"
+          },
+          {
+            "name": "p95_usd",
+            "type": "number",
+            "description": "95th percentile"
+          },
+          {
+            "name": "p99_usd",
+            "type": "number",
+            "description": "99th percentile"
+          },
+          {
+            "name": "max_usd",
+            "type": "number",
+            "description": "Largest amount paid"
+          },
+          {
+            "name": "cases_100k_plus",
+            "type": "integer",
+            "description": "Paid claims of at least $100,000"
+          },
+          {
+            "name": "cases_1m_plus",
+            "type": "integer",
+            "description": "Paid claims of at least $1,000,000"
+          },
+          {
+            "name": "median_years_to_resolution",
+            "type": "number",
+            "description": "Median years from incident to resolution (New York City only)"
+          }
+        ]
+      }
+    },
+    {
+      "name": "vehicle-claims-segments",
+      "path": "data/vehicle-claims-segments.csv",
+      "format": "csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "dataset",
+            "type": "string",
+            "description": "Source and period"
+          },
+          {
+            "name": "breakdown",
+            "type": "string",
+            "description": "How the source was split"
+          },
+          {
+            "name": "segment",
+            "type": "string",
+            "description": "Claim type or cause"
+          },
+          {
+            "name": "sub_segment",
+            "type": "string",
+            "description": "Year, borough, resolution type or agency"
+          },
+          {
+            "name": "cases",
+            "type": "integer",
+            "description": "Paid claims with an amount above $0"
+          },
+          {
+            "name": "total_paid_usd",
+            "type": "number",
+            "description": "Sum of amounts paid"
+          },
+          {
+            "name": "mean_usd",
+            "type": "number",
+            "description": "Average amount paid"
+          },
+          {
+            "name": "min_usd",
+            "type": "number",
+            "description": "Smallest amount paid"
+          },
+          {
+            "name": "p10_usd",
+            "type": "number",
+            "description": "10th percentile"
+          },
+          {
+            "name": "p25_usd",
+            "type": "number",
+            "description": "25th percentile"
+          },
+          {
+            "name": "median_usd",
+            "type": "number",
+            "description": "50th percentile"
+          },
+          {
+            "name": "p75_usd",
+            "type": "number",
+            "description": "75th percentile"
+          },
+          {
+            "name": "p90_usd",
+            "type": "number",
+            "description": "90th percentile"
+          },
+          {
+            "name": "p95_usd",
+            "type": "number",
+            "description": "95th percentile"
+          },
+          {
+            "name": "p99_usd",
+            "type": "number",
+            "description": "99th percentile"
+          },
+          {
+            "name": "max_usd",
+            "type": "number",
+            "description": "Largest amount paid"
+          },
+          {
+            "name": "cases_100k_plus",
+            "type": "integer",
+            "description": "Paid claims of at least $100,000"
+          },
+          {
+            "name": "cases_1m_plus",
+            "type": "integer",
+            "description": "Paid claims of at least $1,000,000"
+          },
+          {
+            "name": "median_years_to_resolution",
+            "type": "number",
+            "description": "Median years from incident to resolution (New York City only)"
+          }
+        ]
+      }
+    },
+    {
+      "name": "amount-bands",
+      "path": "data/amount-bands.csv",
+      "format": "csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "dataset",
+            "type": "string"
+          },
+          {
+            "name": "segment",
+            "type": "string"
+          },
+          {
+            "name": "under_5k",
+            "type": "integer"
+          },
+          {
+            "name": "5k_10k",
+            "type": "integer"
+          },
+          {
+            "name": "10k_25k",
+            "type": "integer"
+          },
+          {
+            "name": "25k_50k",
+            "type": "integer"
+          },
+          {
+            "name": "50k_100k",
+            "type": "integer"
+          },
+          {
+            "name": "100k_250k",
+            "type": "integer"
+          },
+          {
+            "name": "250k_500k",
+            "type": "integer"
+          },
+          {
+            "name": "500k_1m",
+            "type": "integer"
+          },
+          {
+            "name": "1m_plus",
+            "type": "integer"
+          }
+        ]
+      }
+    },
+    {
+      "name": "excluded-segments",
+      "path": "data/excluded-segments.csv",
+      "format": "csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "dataset",
+            "type": "string",
+            "description": "Source and period"
+          },
+          {
+            "name": "breakdown",
+            "type": "string",
+            "description": "How the source was split"
+          },
+          {
+            "name": "segment",
+            "type": "string",
+            "description": "Claim type or cause"
+          },
+          {
+            "name": "sub_segment",
+            "type": "string",
+            "description": "Year, borough, resolution type or agency"
+          },
+          {
+            "name": "cases",
+            "type": "integer",
+            "description": "Paid claims with an amount above $0"
+          },
+          {
+            "name": "total_paid_usd",
+            "type": "number",
+            "description": "Sum of amounts paid"
+          },
+          {
+            "name": "mean_usd",
+            "type": "number",
+            "description": "Average amount paid"
+          },
+          {
+            "name": "min_usd",
+            "type": "number",
+            "description": "Smallest amount paid"
+          },
+          {
+            "name": "p10_usd",
+            "type": "number",
+            "description": "10th percentile"
+          },
+          {
+            "name": "p25_usd",
+            "type": "number",
+            "description": "25th percentile"
+          },
+          {
+            "name": "median_usd",
+            "type": "number",
+            "description": "50th percentile"
+          },
+          {
+            "name": "p75_usd",
+            "type": "number",
+            "description": "75th percentile"
+          },
+          {
+            "name": "p90_usd",
+            "type": "number",
+            "description": "90th percentile"
+          },
+          {
+            "name": "p95_usd",
+            "type": "number",
+            "description": "95th percentile"
+          },
+          {
+            "name": "p99_usd",
+            "type": "number",
+            "description": "99th percentile"
+          },
+          {
+            "name": "max_usd",
+            "type": "number",
+            "description": "Largest amount paid"
+          },
+          {
+            "name": "cases_100k_plus",
+            "type": "integer",
+            "description": "Paid claims of at least $100,000"
+          },
+          {
+            "name": "cases_1m_plus",
+            "type": "integer",
+            "description": "Paid claims of at least $1,000,000"
+          },
+          {
+            "name": "median_years_to_resolution",
+            "type": "number",
+            "description": "Median years from incident to resolution (New York City only)"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "snapshot": "2026-11-24",
+  "claims": 30827,
+  "segments": 87,
+  "band_rows": 15,
+  "excluded_segments": 87,
+  "sources": {
+    "nyc_personal_injury": 15556,
+    "federal_traffic_litigated": 4062,
+    "federal_other_tort": 10270,
+    "chicago": 939
+  },
+  "headline": {
+    "nyc_motor_vehicle_injury": {
+      "cases": 4623,
+      "total_paid_usd": 991982776,
+      "mean_usd": 214576,
+      "min_usd": 219.92,
+      "p10_usd": 6000,
+      "p25_usd": 15000,
+      "median_usd": 40000,
+      "p75_usd": 125000,
+      "p90_usd": 645000,
+      "p95_usd": 1200000,
+      "p99_usd": 2500000,
+      "max_usd": 10500000,
+      "cases_100k_plus": 1410,
+      "cases_1m_plus": 293
+    },
+    "federal_traffic_litigation_settlement": {
+      "cases": 2496,
+      "total_paid_usd": 465056423,
+      "mean_usd": 186321,
+      "min_usd": 150,
+      "p10_usd": 5000,
+      "p25_usd": 13000,
+      "median_usd": 42500,
+      "p75_usd": 130000,
+      "p90_usd": 376250,
+      "p95_usd": 754375,
+      "p99_usd": 2752500,
+      "max_usd": 10800000,
+      "cases_100k_plus": 756,
+      "cases_1m_plus": 87
+    },
+    "chicago_bicycle": {
+      "cases": 93,
+      "total_paid_usd": 19440967,
+      "mean_usd": 209043,
+      "min_usd": 51,
+      "p10_usd": 1543,
+      "p25_usd": 5000,
+      "median_usd": 15000,
+      "p75_usd": 65000,
+      "p90_usd": 121315,
+      "p95_usd": 490812,
+      "p99_usd": 2835599,
+      "max_usd": 9500000,
+      "cases_100k_plus": 17,
+      "cases_1m_plus": 4
+    },
+    "chicago_pedestrian": {
+      "cases": 92,
+      "total_paid_usd": 35326388,
+      "mean_usd": 383982,
+      "min_usd": 35,
+      "p10_usd": 1017,
+      "p25_usd": 4000,
+      "median_usd": 36491,
+      "p75_usd": 112886,
+      "p90_usd": 498976,
+      "p95_usd": 3587500,
+      "p99_usd": 5992071,
+      "max_usd": 6322000,
+      "cases_100k_plus": 28,
+      "cases_1m_plus": 6
+    }
+  }
+}
